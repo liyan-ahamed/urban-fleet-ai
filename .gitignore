@@ -1,0 +1,66 @@
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Databases and local environment
+*.db
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# Generated local assets
+detection-engine/sample_videos/*
+!detection-engine/sample_videos/.gitkeep
+
+# ML training data, generated runs, and downloaded model caches
+detection-engine/pothole_dataset/
+detection-engine/plate_dataset/
+detection-engine/runs/
+runs/
+detection-engine/models/easyocr/
+detection-engine/yolov8n.pt
+
+# Keep the final, project-deliverable trained weights.
+detection-engine/models/*
+!detection-engine/models/pothole_best.pt
+!detection-engine/models/plate_best.pt
+
+# Local runtime logs
+**/server.log
+**/server-error.log
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
